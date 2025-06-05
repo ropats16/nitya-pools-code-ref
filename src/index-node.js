@@ -18,7 +18,7 @@ import path from "path";
 
   // prep file for upload
   const __dirname = path.resolve();
-  const filePath = path.join(__dirname, "./public/crew_1.jpeg");
+  const filePath = path.join(__dirname, "./public/stock.jpeg");
   const fileSize = fs.statSync(filePath).size;
 
   console.log("File Size", fileSize / 1024, "KB");

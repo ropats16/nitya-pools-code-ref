@@ -33,13 +33,13 @@ Once the SDK is installed and you have your wallet file ready, you can upload fi
 Here's an example command:
 
 ```bash
-turbo upload-file --file-path ./public/crew_1.jpeg --wallet-file ./wallet.json
+turbo upload-file --file-path ./public/stock.jpeg --wallet-file ./wallet.json
 ```
 
 **Explanation of the command:**
 
 - `turbo upload-file`: The base command to initiate a file upload.
-- `--file-path ./public/crew_1.jpeg`: Specifies the path to the file you want to upload. Replace `./public/crew_1.jpeg` with the actual path to your file.
+- `--file-path ./public/stock.jpeg`: Specifies the path to the file you want to upload. Replace `./public/stock.jpeg` with the actual path to your file.
 - `--wallet-file ./wallet.json`: Specifies the path to your Arweave wallet key file. Replace `./wallet.json` with the actual path to your wallet file.
 
 ### Important Note
@@ -76,7 +76,7 @@ import path from "path";
   });
 
   const __dirname = path.resolve();
-  const filePath = path.join(__dirname, "./public/crew_1.jpeg");
+  const filePath = path.join(__dirname, "./public/stock.jpeg");
   const fileSize = fs.statSync(filePath).size;
 
   // Details for balance checking and cost estimation can be found in src/index-node.js
@@ -142,7 +142,7 @@ import path from "path";
   const signer = new ArweaveSigner(jwk);
 
   const __dirname = path.resolve();
-  const filePath = path.join(__dirname, "./public/crew_1.jpeg");
+  const filePath = path.join(__dirname, "./public/stock.jpeg");
   const fileAsUint8Array = new Uint8Array(fs.readFileSync(filePath));
 
   const data = createData(fileAsUint8Array, signer, {

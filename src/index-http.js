@@ -19,7 +19,7 @@ import path from "path";
 
   // prep file for upload
   const __dirname = path.resolve();
-  const filePath = path.join(__dirname, "./public/crew_1.jpeg");
+  const filePath = path.join(__dirname, "./public/stock.jpeg");
 
   // Read the file content into a Buffer (which is a Uint8Array)
   const fileAsUint8Array = new Uint8Array(fs.readFileSync(filePath));
