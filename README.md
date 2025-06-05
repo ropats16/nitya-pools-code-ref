@@ -1,6 +1,8 @@
 # Nitya Pools: Upload Data to Arweave with Sponsored Credits
 
-This guide explains how to use Nitya Pools to upload data to Arweave. Nitya Pools allow sponsors to set up credit pools for events, enabling participants to use these shared credits for testing and other activities without needing their own Arweave tokens.
+This guide explains how to use Nitya Pools to upload data to Arweave. Nitya Pools allow sponsors to set up credit pools for events, enabling participants to use these shared credits for testing and other activities without needing their own AR tokens.
+
+> Note: Your wallet address must be whitelisted by the Sponsor in order for you to be able to use credits from the shared pool.
 
 There are three primary ways to interact with Nitya Pools:
 
@@ -152,9 +154,7 @@ import path from "path";
     ],
   });
 
-  // The data item does not need to be signed for Nitya Pools if x-paid-by is used
-  // However, if you were paying yourself, you would sign it:
-  // const signedData = await sign(data, signer);
+  const signedData = await sign(data, signer);
 
   // ... (rest of the HTTP call)
 })();
