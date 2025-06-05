@@ -2,6 +2,7 @@
   "name": "nitya-test-project",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@ardrive/turbo-sdk": "^1.26.0"
+    "@ardrive/turbo-sdk": "^1.26.0",
+    "@dha-team/arbundles": "^1.0.3"
   }
 }
