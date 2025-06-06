@@ -197,3 +197,7 @@ try {
 When the `x-paid-by` header is present and valid, the ArDrive service will attempt to use the specified sponsor's Nitya Pool credits for the upload.
 
 ---
+
+Checkout [Turbo docs](https://docs.ardrive.io/docs/turbo/what-is-turbo.html) for more information on using the Turbo CLI, SDK or API.
+
+### Fin. Thanks for reading.
